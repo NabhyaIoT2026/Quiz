@@ -1,38 +1,91 @@
-.App {
+/* Global Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9fb;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+h2 {
+  text-align: center;
+  color: #4a4a4a;
+}
+
+.quiz-container, .results-container {
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.quiz-container p, .results-container p {
+  font-size: 18px;
+  color: #666;
+}
+
+.quiz-question {
+  margin-bottom: 20px;
+}
+
+.quiz-question h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.quiz-options {
+  display: flex;
+  flex-direction: column;
+}
+
+.quiz-option {
+  font-size: 16px;
+  padding: 10px;
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.quiz-option:hover {
+  background-color: #e6e6e6;
+}
+
+.quiz-option input {
+  margin-right: 10px;
+}
+
+.submit-btn {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #218838;
+}
+
+/* Results Section */
+.results-container {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.results-container p {
+  font-size: 22px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.score {
+  font-weight: bold;
+  color: #28a745;
 }
